@@ -1,0 +1,236 @@
+
+@font-face {
+  font-family: 'DungGeunMo', 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff') url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: 400;
+  font-style: normal; 
+}
+
+
+body {
+	cursor: url("cur.png");
+  background: #000000;
+  color: #E1E1E1;
+  position: relative;
+}
+
+.bg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: -80px;
+	height: 120%;
+	z-index: -1;
+	margin: 0px;
+}
+
+.box {
+	height: 1617px;
+  margin: 70px 205px 204px 205px;
+  width: 1030px;
+  box-shadow: 20px 20px 45px #000000;
+}
+
+.boxinbox {
+	height: 1595px;
+  width: 1000px;
+  margin: -2px 14px;
+}
+
+.box, .boxinbox, nav, .menu1, .menu2, .menu3, section {
+  box-sizing: border-box;
+  background: #111111;
+  border: 2px solid #E1E1E1;
+}
+
+.wrapper, .menu, nav, .logo, .menu1, .menu2, .menu3, .cirles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+	width: 50px;
+  align-items: center;
+  padding: 6px 5px 6px 941px;
+}
+
+.wrapper img{
+	width: 15px;
+	height: 15px;
+}
+
+button {
+	width: 26px;
+	height: 26px;
+	margin-right: 3px;
+	padding: 0;
+}
+
+nav {
+  padding: 6px 5px 6px 20px;
+  width: 1000px;
+  height: 44px;
+  margin-left: -2px;
+}
+
+nav h1 {
+  font-family: 'Chathura';
+  font-size: 40px;
+  margin-top: -19px;
+}
+
+nav h2 {
+	padding-left: 8px;
+}
+
+header {
+	display: flex;
+	padding-top: 40px;
+	background: #E1E1E1;
+	color: #111111;
+	width: 996px;
+	height: 256px;
+	align-items: center;
+}
+
+header img {
+	margin-top: -30px;
+	padding-left: 35px;
+	padding-right: 70px;
+	width: 156px;
+	height: 156px;
+}
+
+header h2 {
+font-family: ;
+font-size: 80px;
+margin: 0;
+}
+
+header p {
+font-size: 50px;
+margin: 0;
+}
+
+.logo img {
+	width: 29px;
+	height: 29px;
+  margin-right: 13px;
+}
+
+.menu {
+  font-family: 'DungGeunMo';
+  font-size: 10px;
+  margin-right: 0px;
+ 	align-items: center;
+}
+
+.menu1, .menu2, .menu3 {
+	height: 32px;
+	align-items: center;
+}
+
+.menu1, .menu2 {
+  width: 122px;
+  margin-right: 3px;
+}
+
+.menu3 {
+  width: 158px;
+}
+
+.hi, .intro, .details {
+  font-family: 'DungGeunMo';
+  background: #111111;
+  width: 1000px;
+  margin-left: -2px;
+  padding-left: 37px;
+  padding-top: 30px;
+}
+
+.hi {
+	height: 284px;
+	margin-top: 20px;
+}
+
+.intro {
+	height: 308px;
+	margin-top: -2px;
+}
+
+.details {
+	height: 630px;
+	margin-top: -6px;
+}
+
+h4, h5 {
+	line-height: 140%;
+  font-size: 20px;
+}
+
+.cirles {
+	margin-top: 44px;
+	width: 883px;
+}
+
+.details p {
+	font-family: 'D2Coding';
+	font-size: 10px;
+	line-height: 14px;
+	color: rgba(255, 255, 255, 0.3);
+	margin-top: 99px;
+}
+
+.minifooter {
+	font-family: 'D2Coding';
+	height: 20px;
+	margin-top: -6px;
+	padding-left: 15px;
+	width: 1000px;
+  margin-left: -2px;
+  margin-bottom: 40px;
+}
+
+.minifooter p {
+	margin-top: -0.7px;
+}
+
+
+-----------------------
+
+/* 드롭다운 버튼 스타일 */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 드롭다운 콘텐츠 스타일 (숨김 상태) */
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* 드롭다운 콘텐츠의 링크 스타일 */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* 드롭다운 콘텐츠의 링크에 마우스를 올리면 배경색 변경 */
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+/* 체크박스를 체크하면 드롭다운 콘텐츠를 보이게 함 */
+#dropdownCheck:checked ~ .dropdown-content {
+  display: block;
+}
+

@@ -1,0 +1,159 @@
+
+@font-face {
+  font-family: 'DungGeunMo', 'D2Coding';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff') url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: 400;
+  font-style: normal; 
+}
+
+body {
+	cursor: url("cur.png");
+  background: #000000;
+  color: #86FCFD;
+  position: relative;
+}
+
+.bg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: -80px;
+	height: 120%;
+	z-index: -1;
+	margin: 0px;
+}
+
+.box {
+  margin: 70px 205px 204px 205px;
+  width: 1030px;
+  box-shadow: 20px 20px 45px #000000;
+}
+
+.boxinbox {
+  width: 1000px;
+  margin: -2px 14px;
+}
+
+.box, .boxinbox, header,.minifooter, .step, .doc, .buttons {
+  box-sizing: border-box;
+  background: #111111;
+  border: 2px solid #86FCFD;
+  height: 1291px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+	width: 50px;
+  align-items: center;
+  padding: 6px 5px 6px 941px;
+}
+
+.wrapper img{
+	width: 15px;
+	height: 15px;
+}
+
+header {
+  padding: 20px 50px 15px 20px;
+  width: 1000px;
+	height: 113px;
+  margin-left: -2px;
+ 	font-family: 'DungGeunMo';
+	font-style: normal;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 0px;
+}
+
+header h2 {
+	font-size: 18px;
+	margin: 0px;
+	margin-top: 19px;
+}
+
+.step, .doc, .buttons {
+  font-family: 'DungGeunMo';
+  background: #111111;
+  width: 1000px;
+  margin-left: -2px;
+  margin-top: -2px;
+}
+
+.step {
+	height: 27px;
+  padding-left: 20px;
+}
+
+h3 {
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.doc {
+	margin-left: 35px;
+	width: 926px;
+	height: 958px;
+	display: flex;
+	align-items: center;
+	padding-left: 153px;
+	padding-top: 3px;
+}
+
+.docbox {
+	width: 627px;
+	height: 930px;
+	background: #111111;
+	border: 2px solid #86FCFD;
+	border-radius: 5px;
+	margin-bottom: 7px;
+	display: flex;
+	align-items: center;
+	padding-left: 4px;
+	padding-top: 2px;
+}
+
+.docboxinbox{
+	width: 615px;
+	height: 917px;
+	background: #111111;
+	border: 2px dashed #86FCFD;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	padding-left: 4px;
+	padding-top: 3px;
+}
+
+.docboxinbox img {
+	width: 610px;
+	height: 912px;
+}
+
+.buttons {
+	height: 156px;
+	padding-top: 80px;
+	padding-left: 714px;
+	font-size: 20px;
+}
+
+h4 {
+	margin-top: -15px;
+}
+
+.minifooter {
+	font-family: 'D2Coding';
+	height: 20px;
+	margin-top: -6px;
+	padding-left: 15px;
+	width: 1000px;
+  margin-left: -2px;
+  margin-bottom: 40px;
+}
+
+.minifooter p {
+	margin-top: -0.7px;
+}
