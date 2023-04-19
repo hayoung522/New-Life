@@ -1,11 +1,17 @@
 
 @font-face {
-  font-family: 'DungGeunMo', 'D2Coding';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff') url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-family: 'DungGeunMo', 'D2Coding', 'SuseongDotum';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff')
+  		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
   font-weight: 400;
   font-style: normal; 
 }
-
+@font-face {
+  font-family: 'SuseongDotum';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/SuseongDotum.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
 	cursor: url("cur.png");
@@ -102,14 +108,15 @@ header img {
 }
 
 header h2 {
-font-family: ;
-font-size: 80px;
-margin: 0;
+	font-family: 'SuseongDotum';
+	font-size: 80px;
+	margin-top: 15px;
 }
 
-header p {
-font-size: 50px;
-margin: 0;
+header h3 {
+	font-family: 'SuseongDotum';
+	font-size: 45px;
+	margin-top: -60px;
 }
 
 .logo img {
