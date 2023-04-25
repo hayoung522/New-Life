@@ -15,7 +15,7 @@
 
 html{
 	scroll-behavior: smooth;
-	cursor: url('cur.png');
+	cursor: url('cur.png'), auto;
 }
 
 body {
@@ -128,8 +128,9 @@ header h2 {
 
 header h3 {
 	font-size: 45px;
-	margin-top: -100px;
-}
+	margin-top: -120px;
+animation: blink 1.2s linear infinite;}
+		@keyframes blink{0%{opacity: 0;} 50%{opacity: .5} 100%{opacity: 1;}}
 
 header h2, header h3 {
     font-family: 'BookkMyungjo-Bd';

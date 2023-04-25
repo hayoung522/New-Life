@@ -96,12 +96,52 @@ header h2 {
 .idpng {
   position: relative;
   display: flex;
+  justify-content: center;
   background-image: url('id.png');
   background-size: 100%;
 	width: 583px;
 	height: 378px;
 	margin-left: 13px;
   background-position: center;
+}
+
+.submits {
+	margin-left: 90px;
+}
+
+.submits input {
+	font-family: 'D2Coding';
+	text-align: right;
+}
+
+.submits input:input {
+	background: none;
+}
+
+input[type=text] {
+	margin-top: 8px;
+  width: 200px;
+  background: none;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1.9px solid black;
+}
+
+input[id=name] {
+	margin-top: 107px;
+}
+
+input[id=address] {
+	margin-top: 19.3px;
+}
+
+input[id=date] {
+	margin-top: -2px;
+}
+
+input[id=location] {
+	margin-top: -2px;
 }
 
 #camcontainer {
@@ -111,7 +151,6 @@ header h2 {
 
 #videoElement {
   margin-top: 35px;
-  margin-left: 369px;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -214,6 +253,7 @@ input[type="checkbox"]:checked {
   height: 17px;
   background: #EC5FF7;
   border: 1px solid #EC5FF7;
+	vertical-align: middle;
 }
 
 label {
