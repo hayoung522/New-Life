@@ -5,8 +5,9 @@
   font-style: normal; 
 }
 
+html{scroll-behavior: smooth;}
+
 body {
-	cursor: url("cur.png");
   background: #000000;
   color: #EC5FF7;
   position: relative;
@@ -17,13 +18,14 @@ body {
 	right: 0;
 	bottom: 0;
 	top: -80px;
-	height: 120%;
+	width: 100%;
 	z-index: -1;
 	margin: 0px;
 }
 
 .box {
-  margin: 70px 205px 204px 205px;
+  margin: auto;
+  margin-top: 70px;
   width: 1030px;
   box-shadow: 20px 20px 45px #000000;
 }
@@ -91,6 +93,31 @@ header h2 {
   padding-left: 20px;
 }
 
+.idpng {
+  position: relative;
+  display: flex;
+  background-image: url('id.png');
+  background-size: 100%;
+	width: 583px;
+	height: 378px;
+	margin-left: 13px;
+  background-position: center;
+}
+
+#camcontainer {
+  height: 222px;
+  width: 192px;
+}
+
+#videoElement {
+  margin-top: 35px;
+  margin-left: 369px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
 h3 {
 	font-size: 14px;
 	margin-top: 4px;
@@ -108,7 +135,6 @@ h3 {
 	height: 407.96px;
 	padding-left: 153px;
 	padding-top: 6px;
-	display: flex;
 }
 
 .idbox {
@@ -136,20 +162,32 @@ h3 {
 	padding-top: 3px;
 }
 
-.idboxinbox img {
-	width: 583px;
-	height: 378px;
-	margin-top: 5px;
-	margin-left: 13px;
-}
-
 .buttons {
 	height: 247px;
-	padding-top: 25px;
-	padding-left: 18px;
-	font-size: 20px;
 	padding-left: 153px;
-	padding-top: 3px;
+	font-size: 20px;
+}
+
+.submit {
+	position: absolute;
+	background: none;
+	width: 46px;
+	height: 28px;
+	border: 2px solid #EC5FF7;
+	border-radius: 4px;
+	font-family: 'D2Coding';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 11px;
+	align-items: center;
+	color: #EC5FF7;
+	margin-left: 520px;
+}
+
+.submit:hover {
+	background: #EC5FF7;
+	color: #111111;
 }
 
 h4{
@@ -157,7 +195,29 @@ h4{
 }
 
 .select {
-	margin-left: 52px;
+	line-height: 22px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 17px;
+  height: 16px;
+  border: 1px solid #EC5FF7;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked {
+  width: 17px;
+  height: 17px;
+  background: #EC5FF7;
+  border: 1px solid #EC5FF7;
+}
+
+label {
+  vertical-align: middle;
 }
 
 .minifooter {

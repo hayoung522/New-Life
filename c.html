@@ -11,7 +11,7 @@
 </head>
 <body>
 	<video autoplay muted loop plays-inline class="bg">
-		<source src="bg.mp4" type="video/mp4">
+		<source src="bg4.mp4" type="video/mp4">
 	</video>
 	<div class="box">
 	<div class="boxinbox">
@@ -31,22 +31,49 @@
 		</section>
 		<section class="id">
 			<div class="idbox">
-				<div class="idboxinbox">
-					<div><img src="id.png"></div>
-				</div>
+			  <div class="idboxinbox">
+			    <div>
+			      <div class="idpng">
+						  <div id="camcontainer">
+						    <video autoplay="true" id="videoElement"></video>
+						  </div>
+						</div>
+						<script>
+						  let video = document.querySelector("#videoElement");
+
+						  if (navigator.mediaDevices.getUserMedia) {
+						    navigator.mediaDevices.getUserMedia({ video: true })
+						      .then(function (stream) {
+						        video.srcObject = stream;
+						      })
+						      .catch(function (error) {
+						        console.log("Error 404")
+						      })
+						  } else {
+						    console.log("getUserMedia not supported.")
+						  }
+						</script>
+			    </div>
+			  </div>
 			</div>
 		</section>
 		<section class="buttons">
 			<h4>옵션을 선택하세요.<br>옵션 하나당 수수료가 전체 결제액 기준 5%씩 추가됩니다.</h4>	
-		<form class="select">
-	    <input type="checkbox" id="checkbox1" name="checkbox1" value="value1">
-	    <label for="checkbox1">신규 이름 추천</label><br>
-	    <input type="checkbox" id="checkbox2" name="checkbox2" value="value2">
-	    <label for="checkbox2">주소지 대여</label><br>
-	    <input type="checkbox" id="checkbox3" name="checkbox3" value="value3">
-	    <label for="checkbox3">사진 보정 및 합성</label><br>
-	    <input type="submit" value="OK">
-	  </form>
+		<form class="select" onsubmit="submitForm(event)">
+		  <input class="checkbox" type="checkbox" id="checkbox1" name="checkbox1" value="value1">
+		  <label for="checkbox1">신규 이름 추천</label><br>
+		  <input class="checkbox" type="checkbox" id="checkbox2" name="checkbox2" value="value2">
+		  <label for="checkbox2">주소지 대여</label><br>
+		  <input class="checkbox" type="checkbox" id="checkbox3" name="checkbox3" value="value3">
+		  <label for="checkbox3">사진 보정 및 합성</label><br>
+		  <input class="submit" type="submit" value="OK">
+		</form>
+		<script>
+		  function submitForm(event) {
+		    event.preventDefault()
+		    window.location.href = "hack.html";
+		  }
+		</script>
 		</section>
 		<section class="minifooter">
 			<p>NEW LIFE CO. BROWSER V2</p>
