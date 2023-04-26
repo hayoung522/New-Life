@@ -13,15 +13,15 @@
     font-style: normal;
 }
 
-html{
-	scroll-behavior: smooth;
-	cursor: url('cur.png'), auto;
-}
-
 body {
   background: #000000;
   color: #E1E1E1;
   position: relative;
+ 	cursor: url('cur.png'), auto;
+}
+
+html{
+	scroll-behavior: smooth;
 }
 
 .bg {
