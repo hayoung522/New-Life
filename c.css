@@ -147,6 +147,7 @@ input[id=location] {
 #camcontainer {
   height: 222px;
   width: 192px;
+  margin-left: 53px;
 }
 
 #videoElement {
