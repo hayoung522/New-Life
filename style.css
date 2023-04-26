@@ -124,22 +124,24 @@ header img {
 header h2 {
 	font-size: 80px;
 	margin-top: 15px;
+	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: calc(1em / 50);
+	padding: 3px;
+	filter: drop-shadow(0 0 20px #ffffff) drop-shadow(0 0 20px #ffffff);
 }
 
 header h3 {
 	font-size: 45px;
 	margin-top: -120px;
-animation: blink 1.2s linear infinite;}
+	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: calc(1em / 60);
+	padding: 3px;
+	animation: blink 1.2s linear infinite;}
 		@keyframes blink{0%{opacity: 0;} 50%{opacity: .5} 100%{opacity: 1;}}
 
 header h2, header h3 {
-    font-family: 'BookkMyungjo-Bd';
-    text-shadow: 
-        -1px -1px 0 black, 
-         1px -1px 0 black, 
-        -1px  1px 0 black, 
-         1px  1px 0 black;
-    display: inline-block;
+  font-family: 'BookkMyungjo-Bd';
+  display: inline-block;
 }
 
 
